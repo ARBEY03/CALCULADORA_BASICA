@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dinámica</title>
+    <!-- Vincula el archivo CSS externo que contiene los estilos para la página -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título principal de la página, h1, que describe el propósito de la aplicación -->
+    <h1>Practica 1 - Calculadora Básica</h1>
+
+    <!-- Formulario que contiene los campos para ingresar números y seleccionar una operación -->
+    <form id="calculator-form">
+        <!-- Primer campo de entrada para el número 1, con el atributo 'required' para asegurarse de que no esté vacío -->
+        <input type="number" id="num1" placeholder="Número 1" required>
+
+        <!-- Selector de operación, permite elegir entre sumar, restar, multiplicar y dividir -->
+        <select id="operation">
+            <option value="add">Sumar</option>
+            <option value="subtract">Restar</option>
+            <option value="multiply">Multiplicar</option>
+            <option value="divide">Dividir</option>
+        </select>
+
+        <!-- Segundo campo de entrada para el número 2, también requerido para evitar campos vacíos -->
+        <input type="number" id="num2" placeholder="Número 2" required>
+
+        <!-- Botón que, al hacer clic, ejecuta la operación aritmética seleccionada -->
+        <button type="button" id="calculate-btn">Calcular</button>
+    </form>
+
+    <!-- Contenedor para mostrar el resultado de la operación -->
+    <div id="result"></div>
+
+    <!-- Carga de jQuery desde CDN (Content Delivery Network) para utilizarlo en la lógica de la calculadora -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Vinculación del archivo JavaScript externo que contiene la lógica de la calculadora -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente para todo el contenido de la página */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos (título y formulario) en una columna vertical */
+    justify-content: flex-start; /* Alinea el contenido al inicio (parte superior) */
+    align-items: center; /* Centra horizontalmente el contenido en la página */
+    height: 100vh; /* Define la altura de la página igual a la altura de la ventana del navegador */
+    background-color: rgb(89, 1, 1); /* Color de fondo para la página */
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+}
+
+/* Estilos para el título h1 */
+h1 {
+    text-align: center; /* Centra el texto del título horizontalmente */
+    color: rgb(255, 250, 250); /* Define el color del texto del título como negro */
+    font-size: 24px; /* Tamaño de la fuente del título */
+    margin-top: 20px; /* Añade un margen superior para separar el título de la parte superior de la página */
+    margin-bottom: 30px; /* Añade un margen inferior para separar el título del formulario */
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: lightseagreen; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario para darle respiro al contenido */
+    border-radius: 30px; /* Bordes redondeados para un aspecto más amigable */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del formulario para darle un efecto de elevación */
+    width: 300px; /* Ancho fijo del formulario */
+}
+
+/* Estilos para los elementos dentro del formulario: entradas, select y botón */
+input, select, button {
+    margin: 10px 0; /* Margen superior e inferior de 10px para separar los elementos entre sí */
+    padding: 10px; /* Espaciado interno dentro de los campos y botones */
+    width: 100%; /* Hacer que los elementos ocupen el 100% del ancho disponible */
+    border: 2px solid #430404; /* Bordes de los campos de entrada con color oscuro */
+    border-radius: 15px; /* Bordes redondeados para entradas, selects y botones */
+    font-size: 16px; /* Tamaño de fuente de los elementos de entrada */
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #430404; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a pointer cuando pasa sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el cursor */
+}
+
+/* Estilos del botón al pasar el cursor por encima (hover) */
+button:hover {
+    background-color: #720000; /* Cambio de color del botón al pasar el cursor por encima */
+}
+
+/* Estilos para el contenedor de resultados */
+#result {
+    margin-top: 20px; /* Margen superior para separar el resultado del formulario */
+    font-size: 1.2em; /* Tamaño de fuente del resultado */
+    text-align: right; /* Alinea el texto del resultado a la derecha */
+    color: white; /* Color del texto del resultado */
+    font-weight: bold; /* Hace el texto del resultado en negrita */
+}
